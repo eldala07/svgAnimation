@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+#head {
+    animation: moveHead 3s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes moveHead {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#arm-left {
+    animation: moveLeftArm 5s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes moveLeftArm {
+    0% {
+        transform: rotateX(0) rotateY(0deg);
+    }
+    25% {
+        transform: rotateX(15deg) rotateY(15deg);
+    }
+    66% {
+        transform: rotateX(30deg) rotateY(30deg);
+    }
+    100% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+}
+
+#arm-left_2 {
+    animation: moveLeftArm_2 5s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes moveLeftArm_2 {
+    0% {
+        transform: rotateZ(0);
+    }
+    25% {
+        transform: rotateZ(-15deg);
+    }
+    66% {
+        transform: rotateZ(-20deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+#arm-shirt {
+    animation: moveArmShirt 5s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes moveArmShirt {
+    0% {
+        transform: rotateZ(0);
+    }
+    25% {
+        transform: rotateZ(5deg) translateX(-1px);
+    }
+    66% {
+        transform: rotateZ(10deg) translateX(-4px);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+#body {
+    animation: moveBody 5s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes moveBody {
+    0% {
+        transform: rotateZ(0);
+    }
+    25% {
+        transform: rotateZ(-1deg);
+    }
+    66% {
+        transform: rotateZ(-3deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+#pants {
+    animation: movePants 5s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes movePants {
+    0% {
+        transform: rotateZ(0);
+    }
+    25% {
+        transform: rotateZ(1deg);
+    }
+    66% {
+        transform: rotateZ(3deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+#tab1 {
+    animation: moveTab1 10s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#tab2 {
+    opacity: 0;
+    animation: moveTab1 10s 3.33s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+
+#tab3 {
+    opacity: 0;
+    animation: moveTab1 10s 6.66s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes moveTab1 {
+    0% {
+        opacity: 1;
+        transform: scale(0,0) rotateZ(10deg);
+    }
+    10% {
+        opacity: 1;
+        transform: scale(1,1) rotateZ(-2deg);
+    }
+    15% {
+        opacity: 1;
+        transform: scale(1,1) rotateZ(0deg);
+    }
+    25% {
+        transform: scale(1,1);
+        opacity: 1;
+    }
+    28% {
+        opacity: 0;
+        transform: scale(0.5,0.5);
+    }
+    29% {
+        opacity: 0;
+        transform: scale(.84,.84) translateX(507px) translateY(200px);
+    }
+    44% {
+        opacity: 1;
+        transform: scale(.84,.84) translateX(507px) translateY(135px);
+    }
+    54% {
+        opacity: 1;
+        transform: scale(.84,.84) translateX(507px) translateY(135px);
+    }
+    79% {
+        opacity: 1;
+        transform: scale(.84,.84) translateX(480px) translateY(-95px) rotateZ(-35deg);
+    }
+    89% {
+        opacity: 1;
+        transform: scale(.84,.84) translateX(480px) translateY(-95px) rotateZ(-35deg);
+    }
+    99% {
+        opacity: 0;
+        transform: scale(.1,.1) translateX(1207px) translateY(145px);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(.1,.1) translateX(0px) translateY(0px);
+    }
+}
+
+#tab1-dot1 {
+    animation: moveDot 10s infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#tab1-dot2 {
+    animation: moveDot 10s 0.33s infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#tab1-dot3 {
+    animation: moveDot 10s 0.66s infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#tab2-dot1 {
+    animation: moveDot 10s 3.33s infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#tab2-dot2 {
+    animation: moveDot 10s 3.66s infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#tab2-dot3 {
+    animation: moveDot 10s 3.99s infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#tab3-dot1 {
+    animation: moveDot 10s 6.33s infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#tab3-dot2 {
+    animation: moveDot 10s 6.66s infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#tab3-dot3 {
+    animation: moveDot 10s 6.99s infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes moveDot {
+    0% {
+        transform: scale(0.5,0.5);
+    }
+    4% {
+        transform: scale(1,1);
+    }
+    8% {
+        transform: scale(0.5,0.5);
+    }
+    12% {
+        transform: scale(1,1);
+    }
+    16% {
+        transform: scale(0.5,0.5);
+    }
+    20% {
+        transform: scale(1,1);
+    }
+    24% {
+        transform: scale(0.5,0.5);
+    }
+    28% {
+        transform: scale(1,1);
+    }
+}
+
+#tab2-line1 {
+    animation: fillYLine 10s 3.33s infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#tab2-line2 {
+    animation: fillYLineReallyFast 10s 3.33s infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+#tab2-line3 {
+    animation: fillYLine 10s 3.33s infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+#tab2-line4 {
+    animation: fillYLineFast 10s 3.33s infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#tab3-line1 {
+    animation: fillLine 10s 6.66s infinite;
+    transform-origin: left;
+    transform-box: fill-box;
+}
+
+#tab3-line2 {
+    animation: fillLineFast 10s 6.66s infinite;
+    transform-origin: left;
+    transform-box: fill-box;
+}
+#tab3-line3 {
+    animation: fillLineReallyFast 10s 6.66s infinite;
+    transform-origin: left;
+    transform-box: fill-box;
+}
+
+@keyframes fillLine {
+    0% {
+        transform: scale(0, 1);
+    }
+    20% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes fillLineFast {
+    0% {
+        transform: scale(0, 1);
+    }
+    15% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes fillLineReallyFast {
+    0% {
+        transform: scale(0, 1);
+    }
+    10% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes fillYLine {
+    0% {
+        transform: scale(1, 0);
+    }
+    20% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes fillYLineFast {
+    0% {
+        transform: scale(1, 0);
+    }
+    15% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes fillYLineReallyFast {
+    0% {
+        transform: scale(1, 0);
+    }
+    10% {
+        transform: scale(1, 1);
+    }
+}
+
+#tab1-bigdot {
+    animation: moveBigDot 10s infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes moveBigDot {
+    5% {
+        transform: scale(1,1);
+    }
+    12% {
+        transform: scale(0.75,0.75);
+    }
+    18% {
+        transform: scale(1,1);
+    }
+    24% {
+        transform: scale(0.75,0.75);
+    }
+    30% {
+        transform: scale(1,1);
+    }
+}
+
+#tab1-line-top {
+    animation: fillLine 10s infinite;
+    transform-origin: left;
+    transform-box: fill-box;
+}
+#tab1-line-bottom {
+    animation: fillLine 10s 0.2s infinite;
+    transform-origin: left;
+    transform-box: fill-box;
+}
